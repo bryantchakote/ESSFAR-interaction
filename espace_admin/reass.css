@@ -1,0 +1,31 @@
+div.admin-center-container{right: 200px;}
+
+#admin-reassign-quest a{color: #FFF;}
+
+#admin-reassign-quest{background-color: RGB(200, 80, 80);}
+
+.admin-quest-send-date{width: 15%;}
+
+.admin-quest-infos{
+    width: 82.7%;
+    border-left: 0.4px solid white;
+}
+
+/* Bloc de droite */
+div#admin-right > div{display: none;}
+
+div#admin-right > div h4{
+    margin: 10px 0px;
+    color: RGB(200, 80, 80);
+}
+div#admin-right > div button{
+    display: block;
+    margin: 5px auto;
+    width: 90%
+}
+.new-ens-list, .choix-ens-hidden, #modif-question-id{display: none;}
+
+input[type='password']{
+    width: 80%;
+    margin-top: 20px;
+}

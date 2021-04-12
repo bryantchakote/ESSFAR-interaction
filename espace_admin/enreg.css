@@ -1,0 +1,72 @@
+#admin-user-registration a{color: #FFF;}
+
+#admin-user-registration{background-color: RGB(200, 80, 80);}
+
+div#admin-content{
+    display: table;
+    margin: 0 auto;
+    width: 65%;
+    background: linear-gradient(to bottom, RGBa(102, 136, 170, 0.1), RGBa(102, 136, 170, 0));
+    text-align: center;
+}
+div#admin-content:hover{background-color: RGBa(102, 136, 170, 0.05);}
+
+div.enreg-left{
+    float: left;
+    width: 50%;
+    height: 365px;
+    border-right: 0.4px dashed #B22;
+}
+div.enreg-right{
+    float: right;
+    width: 49.9%;
+}
+div.enreg-right div[id$='right']{
+    margin-top: 20px;
+    padding-top: 5px;
+    border-top: 0.4px dashed #B22;
+}
+select{
+    margin-top: 30px;
+    border-bottom: 0.1px solid #006;
+}
+.radio-lbl{
+    display: inline;
+    position: static;
+    color: #B22;
+    text-align: center;
+    cursor: pointer;
+}
+.enreg-left *[id$=validation], .enreg-right *[id$=validation]{
+    display: block;
+    position: absolute;
+    width: 175px;
+    color: #B22;
+    font-size: 14px;
+}
+.enreg-left *[id$=validation]{text-align: right; left: 0px;}
+
+#name1-validation{top: 176px;}
+
+#name2-validation{top: 233px;}
+
+#sexe-validation{top: 291px;}
+
+#email-validation{top: 350px;}
+
+#pwd-length-validation{top: 408px;}
+
+#pwd-validation{top: 465px;}
+
+
+.enreg-right *[id$=validation]{text-align: left; right: 0px;}
+
+#user-type-validation{top: 150px;}
+
+#mat-validation{top: 222px;}
+
+#niv-validation{top: 265px;}
+
+#UE-validation{top: 355px;}
+
+div#third-right{clear: both; padding-top: 20px;}

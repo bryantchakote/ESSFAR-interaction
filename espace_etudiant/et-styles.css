@@ -1,0 +1,26 @@
+/* Bloc de droite */
+div#ask-quest-active, div[id^=show]{display: none;}
+
+/* Poser une question */
+select{
+    margin-top: 10px;
+    border-bottom: none;
+}
+textarea#et-quest-wording{
+    padding: 5px;
+    font-size: 16px;
+    outline-color: #006;
+    color: #006;
+}
+input{display: none;}
+
+/* Afficher par UE / par enseignant */
+[id^=show] h4{
+    margin: 10px 0px;
+    color: RGB(200, 80, 80);
+}
+[id^=show] button{
+    display: block;
+    margin: 5px auto;
+    width: 90%
+}

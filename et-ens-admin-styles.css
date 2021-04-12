@@ -1,0 +1,167 @@
+/* Bloc de gauche */
+div#et-left, div#ens-left, div#admin-left{
+    width: 200px;
+    height: 82.7%;
+    position: fixed;
+    left: 0px;
+    top: 94.9px;
+    background-color: #68A;
+    text-align: center;
+    border-top: 10px solid #B22;
+    border-top-right-radius: 10px;
+}
+h3.et-title, h3.ens-title, h3.admin-title{
+    margin: 0px;
+    padding: 10px 0px;
+    background-color: #FFF;
+    color: #B22;
+    font-size: 20px;
+}
+h4.et-subtitle, h4.ens-subtitle, h4.admin-subtitle{
+    margin: 0px;
+    padding: 7.5px 0px;
+    background-color: #FFF;
+    color: #006;
+    font-size: 18px;
+}
+p#et-name, p#ens-name, p#admin-name{
+    margin: 0px;
+    padding: 16px 0px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #FFF;
+    overflow: hidden;
+}
+#et-left button, #ens-left button, #admin-left button{
+    margin: 30px auto;
+    width: 90%;
+}
+button#logout{
+    padding: 0px;
+    width: 93px;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    right: 0px;
+    text-decoration: underline;
+}
+#logout:hover{color: #FFF;}
+
+/* Bloc de droite */
+div#ens-right, div#et-right, div#admin-right{
+    width: 200px;
+    height: 82.7%;
+    position: fixed;
+    right: 0px;
+    top: 94.9px;
+    background-color: #FFF;
+    text-align: center;
+    border-top: 10px solid #B22;
+    border-top-left-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: none;
+}
+
+/* Bloc central */
+div.et-center-container, div.ens-center-container, div.admin-center-container{
+    margin: 0px;
+    height: 84%;
+    position: fixed;
+    top: 94.9px;
+    left: 201px;
+    right: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* Central superieur */
+div.et-ask-question, div.ens-options, div.admin-options{
+    margin-top: 10px;
+    padding: 25px;
+    width: 100%;
+    background-color: #68A;
+    text-align: center;
+}
+div.et-ask-question button,
+nav.ens-menu button,
+nav.admin-menu button{
+    display: inline;
+    margin: 2px auto;
+    width: 20%;
+}
+nav.admin-menu button, button#default-menu-title{padding: 0px;}
+
+button a{
+    display: block;
+    padding: 6px;
+    color: #006;
+    text-decoration: none;
+}
+button a:hover{color: #FFF;}
+
+/* Central inferieur */
+h1#et-questions-heading, h1#ens-questions-heading, h1#admin-heading{
+    margin: 0px;
+    padding: 8.5px;
+    background-color: #68A;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    border-top: 0.4px solid #BBB;
+    height: 33px;
+    overflow: hidden;
+    width: 100%;
+}
+div[class$=questions-display]{
+    margin-bottom: 1px;
+    padding: 0px;
+    height: 60px;
+    color: #006;
+    overflow: hidden;
+    line-height: 1.20em;
+}
+[class$=questions-display]:nth-child(odd){background-color: RGBa(0, 0, 0, 0.1);}
+
+[class$=questions-display]:nth-child(even){background-color: RGBa(0, 0, 0, 0.15);}
+
+div.et-ans-recept-date, div.et-quest-infos, div.et-quest-send-date,
+div.ens-quest-recept-date, div.ens-quest-infos, div.ens-ans-send-date,
+div.admin-quest-send-date, div.admin-quest-infos{
+    display: inline-block;
+    padding: 3px;
+    vertical-align: top;
+    font-size: 14px;
+}
+.et-ans-recept-date, .et-quest-send-date,
+.ens-quest-recept-date, .ens-ans-send-date,
+{width: 10.8%;}
+.admin-quest-send-date{width: 21.6%;}
+
+.et-quest-infos:hover, .ens-quest-infos:hover, .admin-quest-infos:hover{
+    background-color: RGBa(187, 34, 34, 0.2);
+    font-weight: bold;
+}
+
+.et-questions-display p, .ens-questions-display p, .admin-questions-display p{
+    display: inline;
+    margin: 0px;
+}
+
+.et-quest-infos, .ens-quest-infos{
+    width: 75.1%;
+    border-left: 0.4px solid white;
+    border-right: 0.4px solid white;
+}
+.admin-quest-infos{
+    width: 75.1%;
+    border-left: 0.8px solid white;
+}
+span{display: none;}
+
+input.confirm-action, div#admin-content button{
+    display: inline;    
+    width: 40%;
+    margin: 0px 10px;
+}

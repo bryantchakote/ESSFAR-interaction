@@ -1,0 +1,50 @@
+#admin-user-modification a{color: #FFF;}
+
+#admin-user-modification{background-color: RGB(200, 80, 80);}
+
+div.modif-container{
+    display: table;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+div.modif-container > div{
+    float: left;
+    padding: 20px 0px;
+    width: 24.95%;
+    height: 325px;
+}
+div#modif-ens-UE{
+    border-left: 0.4px dashed #68A;
+    border-right: 0.4px dashed #68A;
+}
+div#modif-niv-UE{border-right: 0.4px dashed #68A;}
+
+#modif-et-niv .modif-subcontainer, #modif-suppress .modif-subcontainer{padding-top: 5px;}
+
+div.modif-container h4{
+    margin: 10px 0px;
+    padding: 6px 0px;
+    color: #68A;
+}
+div.modif-container h4:hover{
+    margin-bottom: 8px;
+    color: #006;
+    border-bottom: 2px solid #B22;
+}
+div.modif-subcontainer{
+    display: none;
+    padding-top: 20px;
+}
+input{margin-bottom: 20px;}
+
+input[type='password'], button{margin-top: 20px;}
+
+select{
+    margin-bottom: 30px;
+    border-bottom: 0.1px solid #006;
+}       
+.etou{
+    margin: 10px 0px;
+    color: RGB(200, 80, 80);
+}

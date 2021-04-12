@@ -1,0 +1,21 @@
+div.connex-container{
+    margin: 0px auto;
+    margin-top: 170px;
+    padding-bottom: 40px;
+    width: 400px;
+    height: 260px;
+    background: linear-gradient(to top, RGBa(20, 170, 255, 0.1), #FFF);
+    text-align: center;
+    border-radius: 40px;
+}
+div.connex-container:hover{background: linear-gradient(to top, RGBa(20, 170, 255, 0.2), #FFF);}
+
+h1.connex-heading{
+    margin-bottom: 0px;
+    color: RGB(200, 80, 80);
+    font-weight: bold;
+    font-size: 48px;
+}
+label, input{width: 60%;}
+
+button{position: relative; top: 30px;}

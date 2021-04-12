@@ -1,0 +1,127 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+body, input, select, button{
+    font-family: 'Open Sans light', 'sans-serif', Arial;
+    font-size: 15px;
+}
+input, select, button{
+    display: block;
+    margin: 0 auto;
+    background: none;
+    border: none;
+    outline: none;
+}
+input, select{
+    color: #006;
+    padding: 3px 0px;
+}
+input, button{font-weight: bold;}
+
+select, button{cursor: pointer;}
+
+input{
+    border-bottom: 0.1px solid #006;
+    margin-bottom: 10px;
+}
+input[type=radio]{
+    display: inline;
+    width: auto;
+}
+label{
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    color: #006;
+    position: relative;
+    top: 25px;
+    cursor: text;
+}
+button{
+    padding: 6px;
+    border-radius: 10px;
+}
+#connex-submit, #enreg-submit,
+div#admin-content button,
+#reass-quest{
+    margin-top: 20px;
+    width: 40%;
+    background-color: #68A;
+    color: #FFF;
+}
+#connex-submit:hover, #enreg-submit:hover,
+nav[class$=menu] button:hover, .et-ask-question button:hover,
+div#admin-content button:hover, #reass-quest:hover
+{background-color: RGB(200, 80, 80);}
+
+nav[class$=menu] button, .et-ask-question button,
+div[id^=show] button,
+#admin-right > div button{background-color: #FFF; color: #006;}
+
+nav[class$=menu] button:hover, .et-ask-question button:hover
+{color: #FFF;}
+
+#ens-ans-display button,
+#ask-quest-active button, #show-ans-active button{
+    margin-top: 20px;
+    width: 45%;
+    background-color: RGB(200, 80, 80);
+    color: #FFF;
+}
+#ens-ans-display button:hover, div[id^=show] button:hover,
+#ask-quest-active button:hover, #show-ans-active button:hover,
+#admin-right > div button:hover
+{background-color: #68A; color: #FFF;}
+
+
+div.header-container{
+    margin: 0px;
+    width: 100%;
+    height: 94.5px;
+    position: fixed;
+    top: 0px;
+    background-color: #FFF;
+    z-index: 1000;
+}
+header{
+    margin: 0 auto;
+    padding: 0px 10px;
+    width: 680px;
+    border-bottom: 10px solid #B22;
+    border-radius: 10px;
+    background-color: #FFF;
+}
+div.header-left, div.header-right{
+    display: table-cell;
+    vertical-align: middle;
+}
+div.header-left{width: 180px;}
+
+div.header-right{
+    padding-left: 48px;
+    text-align: center;
+}
+.header-img{width: 100%;}
+
+.header-msg{
+    font-size: 20px;
+    font-weight: bold;
+    color: RGBa(20, 170, 255, 0.8);
+}
+
+
+#close{
+    width: 10px;
+    height: 10px;
+    border-radius: 1px;
+    position: fixed;
+    top: 104px;
+    right: 16px;
+    background-color: #68A;
+}
+#close:hover{
+    width: 15px;
+    height: 15px;
+    background-color: #B22;
+}

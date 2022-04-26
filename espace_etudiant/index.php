@@ -69,7 +69,7 @@
         <div id='et-left'>
             <div class='et-left-up'>
                 <h3 class='et-title'>ESSFAR interaction</h3>
-                <h4 class='et-subtitle'>Espace etudiant</h4>
+                <h4 class='et-subtitle'>Espace étudiant</h4>
                 <p id='et-name'>
                     <?php
                         // Recuperer uniquement le premier mot du nom et du prenom
@@ -89,7 +89,7 @@
             </nav>
             
             <form method='post' action='../logout.php' id='logout-confirm'>
-                <button name='logout' id='logout' value='logout'>Deconnexion</button>
+                <button name='logout' id='logout' value='logout'>Déconnexion</button>
             </form>
         </div>
         
@@ -115,7 +115,7 @@
                     $questionUESelect->execute();
                     $UETitle = $questionUESelect->fetch();
                     ?>
-                    <h1 id='admin-heading'>Questions posees en <?php echo $UETitle['UE_nom'] ?></h1>
+                    <h1 id='admin-heading'>Questions posées en <?php echo $UETitle['UE_nom'] ?></h1>
                     
                     <?php unset($_SESSION['UE-questions']);
                 }
@@ -133,7 +133,7 @@
                     $questionEnsSelect->execute();
                     $ensTitle = $questionEnsSelect->fetch();
                     ?>
-                    <h1 id='admin-heading'>Questions posees a <?php echo ensName($ensTitle) ?></h1>
+                    <h1 id='admin-heading'>Questions posées à <?php echo ensName($ensTitle) ?></h1>
                     
                     <?php unset($_SESSION['ens-questions']);
                 }
@@ -166,17 +166,17 @@
                 ?>
                 <div class='et-questions-display'>
                     <div class='et-ans-recept-date'>
-                        <b>Date reponse</b>
+                        <b>Date réponse</b>
                         <br>
                         <p><?php echo $question['ans_date'] == NULL ? '----------------' : $question['ans_date'] ?></p>
                         <br>
                         <p><?php echo $question['ans_heure'] == NULL ? '------------' : $question['ans_heure'] ?></p>
                     </div>
                     <div class='et-quest-infos' title='Cliquez pour afficher le contenu'>
-                        <p>Posee a : </p>
+                        <p>Posée à : </p>
                         <b><?php ensName($questionEns) ?></b>
                         <br>
-                        <p>UE concernee : </p>
+                        <p>UE concernée : </p>
                         <b><?php echo $questionUE['UE_nom'] ?></b>
                         <br>
                         <div class='et-answer-content'>
@@ -184,8 +184,8 @@
                             <p>Question : </p>
                             <b><?php echo $question['quest_libelle'] ?></b>
                             <br><br>
-                            <p>Reponse : </p>
-                            <b><?php echo ($question['ans_libelle'] == '') ? 'Votre enseignant n\'a pas encore repondu a cette question' : $question['ans_libelle'] ?></b>
+                            <p>Réponse : </p>
+                            <b><?php echo ($question['ans_libelle'] == '') ? 'Votre enseignant n\'a pas encore répondu à cette question' : $question['ans_libelle'] ?></b>
                             <br><br>
                         </div>
                     </div>

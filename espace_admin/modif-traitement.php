@@ -5,7 +5,7 @@
     $etSelect = $connexion->prepare('SELECT * FROM etudiants WHERE et_matricule = :et_matricule');
     
     $modif_et_niv_effective = $modif_ens_UE_effective = $modif_niv_UE_effective = $modif_supress_effective =
-    $modif_et_niv_control = $modif_ens_UE_control = $modif_niv_UE_control = $modif_supress = $confirm_action = '';
+    $modif_et_niv_control = $modif_ens_UE_control = $modif_niv_UE_control = $modif_supress = $confirm_action = 0;
     
     if(isset($_POST['submit-et-niv']) && !empty($_POST['submit-et-niv'])){
         if($_POST['confirm-action'] == $_SESSION['mdp']){
@@ -148,19 +148,19 @@
         }
     }
     
-    reportMessage($modif_et_niv_effective, 1, "<script>alert('Niveau de l\'etudiant modifie!')</script>");
+    reportMessage($modif_et_niv_effective, 1, "<script>alert('Niveau de l\'étudiant modifié!')</script>");
     reportMessage($modif_et_niv_control, 1, "<script>alert('Matricule invalide!')</script>");
-    reportMessage($modif_et_niv_control, 2, "<script>alert('Etudiant deja dans le niveau selectionne!')</script>");
+    reportMessage($modif_et_niv_control, 2, "<script>alert('Etudiant déjà dans le niveau selectionné!')</script>");
     
-    reportMessage($modif_ens_UE_effective, 1, "<script>alert('Donnees de l\'enseignant modifiees!')</script>");
-    reportMessage($modif_ens_UE_control, 1, "<script>alert('UE deja enseignee par l\'enseignant selectionne!')</script>");
-    reportMessage($modif_ens_UE_control, 2, "<script>alert('UE non enseignee par l\'enseignant selectionne!')</script>");
+    reportMessage($modif_ens_UE_effective, 1, "<script>alert('Données de l\'enseignant modifiées!')</script>");
+    reportMessage($modif_ens_UE_control, 1, "<script>alert('UE déjà enseignée par l\'enseignant selectionné!')</script>");
+    reportMessage($modif_ens_UE_control, 2, "<script>alert('UE non enseignée par l\'enseignant selectionné!')</script>");
     
-    reportMessage($modif_niv_UE_effective, 1, "<script>alert('Donnees du niveau modifiees!')</script>");
-    reportMessage($modif_niv_UE_control, 1, "<script>alert('UE appartenant deja au niveau selectionne!')</script>");
-    reportMessage($modif_niv_UE_control, 2, "<script>alert('UE n\'appartenant pas au niveau selectionne!')</script>");
+    reportMessage($modif_niv_UE_effective, 1, "<script>alert('Données du niveau modifiées!')</script>");
+    reportMessage($modif_niv_UE_control, 1, "<script>alert('UE appartenant déjà au niveau selectionné!')</script>");
+    reportMessage($modif_niv_UE_control, 2, "<script>alert('UE n\'appartenant pas au niveau selectionné!')</script>");
     
-    reportMessage($modif_supress_effective, 1, "<script>alert('Utilisateur(s) supprimee(s)!')</script>");
+    reportMessage($modif_supress_effective, 1, "<script>alert('Utilisateur(s) supprimé(s)!')</script>");
     reportMessage($modif_supress, 1, "<script>alert('Matricule invalide!')</script>");
     
     reportMessage($confirm_action, 1, "<script>alert('Mot de passe invalide!')</script>");

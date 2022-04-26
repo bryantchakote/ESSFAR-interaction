@@ -35,7 +35,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ESSFAR interaction - Espace admin - Reassigner</title>
+        <title>ESSFAR interaction - Espace admin - Réassigner</title>
         <?php include 'admin-head.php'; ?>
         <link rel='stylesheet' href='reass.css'>
         <script src='reass.js'></script>
@@ -59,7 +59,7 @@
                     $questionUESelect->execute();
                     $UETitle = $questionUESelect->fetch();
                     ?>
-                    <h1 id='admin-heading'>Questions non traitees en <?php echo $UETitle['UE_nom'] ?></h1>
+                    <h1 id='admin-heading'>Questions non traitées en <?php echo $UETitle['UE_nom'] ?></h1>
         
                     <?php unset($_SESSION['UE-filter']);
                 }
@@ -71,7 +71,7 @@
                     $questionEnsSelect->execute();
                     $ensTitle = $questionEnsSelect->fetch();
                     ?>
-                    <h1 id='admin-heading'>Questions non traitees de <?php echo ensName($ensTitle) ?></h1>
+                    <h1 id='admin-heading'>Questions non traitées de <?php echo ensName($ensTitle) ?></h1>
         
                     <?php unset($_SESSION['ens-filter']);
                 }
@@ -79,7 +79,7 @@
                 else{
                     $questionsSelect = $connexion->prepare('SELECT * FROM questions WHERE ans_libelle = ""');
                     
-                    ?> <h1 id='admin-heading'>Questions non traitees</h1> <?php
+                    ?> <h1 id='admin-heading'>Questions non traitées</h1> <?php
                 }
                     
                 $questionsSelect->execute();

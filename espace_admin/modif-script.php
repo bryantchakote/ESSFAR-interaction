@@ -125,7 +125,7 @@
     submitEnsUE.addEventListener('click', function(event){
         try{
             if(modifEnsUEAction.value == 'action')
-                throw 'Veuillez choisir une action a executer';
+                throw 'Veuillez choisir une action à exécuter';
 
             if(modifEnsUEEnsList.value == 'choix-enseignant')
                 throw 'Veuillez choisir un enseignant';
@@ -142,7 +142,7 @@
     submitNivUE.addEventListener('click', function(event){
         try{
             if(modifNivUEAction.value == 'action')
-                throw 'Veuillez choisir une action a executer';
+                throw 'Veuillez choisir une action à exécuter';
 
             if(modifNivUENivList.value == 'choix-niveau')
                 throw 'Veuillez choisir un niveau';

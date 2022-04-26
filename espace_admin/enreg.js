@@ -11,7 +11,7 @@ function activeEtudiant(){
     toInitialText(enregNiv);
     toInitialBorder(enregNiv);
     
-    enregUE.value = 'Unite d\'enseignement';
+    enregUE.value = 'Unité d\'enseignement';
     toGrayText(enregUE);
     toGrayBorder(enregUE);
     
@@ -142,14 +142,14 @@ function reset(){
     
     if(enregNiv.value != 'Niveau'){nivValidation.innerHTML = '';}
     
-    if(enregUE.value != 'Unite d\'enseignement'){UEValidation.innerHTML= '';}
+    if(enregUE.value != 'Unité d\'enseignement'){UEValidation.innerHTML= '';}
 }
 
 
 function userTypeVerification(event){
     try{
         if(!($('#etudiant').is(':checked')) && !($('#enseignant').is(':checked')))
-            throw 'Selectionnez "Etudiant" ou "Enseignant" ci-dessous';
+            throw 'Sélectionnez "Etudiant" ou "Enseignant" ci-dessous';
         else 
             throw '';
         }

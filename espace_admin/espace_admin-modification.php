@@ -13,7 +13,7 @@
     <body>
         <?php include 'espace_admin-base.php' ?>
         
-                <h1 id='admin-heading'>Modifier des donnees</h1>
+                <h1 id='admin-heading'>Modifier des données</h1>
                 
                 <div id='admin-content'>
                     <div class='modif-container'>
@@ -28,7 +28,7 @@
                             <h4 id='modif-et-niv-title'>Changer le niveau d'un etudiant</h4>
                             <div class='modif-subcontainer'>
                                 <form method='post' action='modif-traitement.php'>
-                                    <label for='modif-matricule' id='modif-matricule-label'>Matricule etudiant</label>
+                                    <label for='modif-matricule' id='modif-matricule-label'>Matricule étudiant</label>
                                     <input type='text' name='modif-matricule' id='modif-matricule' maxlength='11'>
 
                                     <select name='et-new-niv' id='et-new-niv'>
@@ -51,7 +51,7 @@
                         </div>
 
                         <div id='modif-ens-UE'>
-                            <h4 id='modif-ens-UE-title'>Gerer les UEs d'un enseignant</h4>
+                            <h4 id='modif-ens-UE-title'>Gérer les UEs d'un enseignant</h4>
                             <div class='modif-subcontainer'>
                                 <form method='post' action='modif-traitement.php'>
                                     <select name='modif-ens-UE-action' id='modif-ens-UE-action'>
@@ -93,7 +93,7 @@
                         </div>
 
                         <div id='modif-niv-UE'>
-                            <h4 id='modif-niv-UE-title'>Gerer les UEs d'un niveau</h4>
+                            <h4 id='modif-niv-UE-title'>Gérer les UEs d'un niveau</h4>
                             <div class='modif-subcontainer'>
                                 <form method='post' action='modif-traitement.php'>
                                     <select name='modif-niv-UE-action' id='modif-niv-UE-action'>
@@ -138,7 +138,7 @@
                             <h4 id='modif-suppress-title'>Supprimer un utilisateur</h4>
                             <div class='modif-subcontainer'>
                                 <form method='post' action='modif-traitement.php'>
-                                    <label for='suppress-matricule' id='suppress-matricule-label'>Matricule etudiant</label>
+                                    <label for='suppress-matricule' id='suppress-matricule-label'>Matricule étudiant</label>
                                     <input type='text' name='suppress-matricule' id='suppress-matricule' maxlength='11'>
 
                                     <p class='etou'>(ET / OU)</p>

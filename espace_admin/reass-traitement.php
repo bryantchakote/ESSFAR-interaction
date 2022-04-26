@@ -14,7 +14,7 @@
     if(isset($_POST['reass-quest']) && !empty($_POST['reass-quest'])){
         $reassQuest = $connexion->prepare('UPDATE questions SET ens_id = "' .$_POST['reass-quest']. '" WHERE quest_id = "' .$_POST['modif-question-id']. '"');
         $reassQuest->execute();
-        echo "<script>alert('Question reassignee a un autre enseignant')</script>";
+        echo "<script>alert('Question reassignée à un autre enseignant')</script>";
     }
 
     echo "<script>location.replace('espace_admin-reassigner_questions.php')</script>";

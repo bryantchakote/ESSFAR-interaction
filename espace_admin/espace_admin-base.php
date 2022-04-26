@@ -9,13 +9,13 @@
     </div>
     
     <nav class='reass-menu'>
-        <button id='default-menu-title'><a href='espace_admin-reassigner_questions.php'>Questions non-traitees</a></button>
+        <button id='default-menu-title'><a href='espace_admin-reassigner_questions.php'>Questions non-traitées</a></button>
         <button id='UE-menu-title'>Afficher par UE</button>
         <button id='ens-menu-title'>Afficher par Enseignant</button>
     </nav>
     
     <form method='post' action='../logout.php'>
-        <button name='logout' id='logout' value='logout'>Deconnexion</button>
+        <button name='logout' id='logout' value='logout'>Déconnexion</button>
     </form>
 </div>
 
@@ -23,9 +23,9 @@
     var logout = document.getElementById('logout');
     var logoutConfirm = document.getElementById('logout-confirm');
     
-    //Deconnexion
+    //Déconnexion
     logout.addEventListener('click', function(event){
-        if(confirm('Souhaitez-vous vraiment vous deconnecter?'))
+        if(confirm('Souhaitez-vous vraiment vous déconnecter?'))
             logoutConfirm.submit();
     });
 </script>
@@ -38,7 +38,7 @@
                 <form method='post' action=''>
                     <button id='admin-user-registration'><a href='espace_admin-enregistrement.php'>Enregistrer</a></button>
                     <button id='admin-user-modification'><a href='espace_admin-modification.php'>Modifier</a></button>
-                    <button id='admin-reassign-quest'><a href='espace_admin-reassigner_questions.php'>Reaffecter question</a></button>
+                    <button id='admin-reassign-quest'><a href='espace_admin-reassigner_questions.php'>Réaffecter question</a></button>
                 </form>
             </nav>
         </div>

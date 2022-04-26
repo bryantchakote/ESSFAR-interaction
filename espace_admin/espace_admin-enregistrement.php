@@ -23,7 +23,7 @@
                             <input type='text' name='enreg-nom' id='enreg-nom' required='required'>
                             <span id='name1-validation'></span>
 
-                            <label for='enreg-prenom' class='enreg-lbl-left'>Prenom</label>
+                            <label for='enreg-prenom' class='enreg-lbl-left'>Prénom</label>
                             <input type='text' name='enreg-prenom' id='enreg-prenom'>
                             <span id='name2-validation'></span>
 
@@ -31,11 +31,11 @@
                             <input type='text' name='enreg-sexe' id='enreg-sexe' required='required'>
                             <span id='sexe-validation'></span>
 
-                            <label for='enreg-email' class='enreg-lbl-left'>Adresse mail</label>
+                            <label for='enreg-email' class='enreg-lbl-left'>Adresse email</label>
                             <input type='email' name='enreg-email' id='enreg-email' required='required'>
                             <span id='email-validation'></span>
 
-                            <label for='enreg-pwd1' class='enreg-lbl-left'>Mot de passe (6 - 16 caracteres)</label>
+                            <label for='enreg-pwd1' class='enreg-lbl-left'>Mot de passe (6 - 16 caractères)</label>
                             <input type='password' name='enreg-pwd1' id='enreg-pwd1' maxlength='16' required='required'>
                             <span id='pwd-length-validation'></span>
 

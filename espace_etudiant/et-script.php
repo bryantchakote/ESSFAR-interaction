@@ -119,7 +119,7 @@
             if(questionEns.value == 'choix-ens')
                 throw 'Veuillez choisir un enseignant';
             else if(etQuestWording.value == '')
-                throw 'Veuillez entrer le libelle de votre question';
+                throw 'Veuillez entrer le libellé de votre question';
         }
         catch(e){
             alert(e);
@@ -130,7 +130,7 @@
     // Supprimer une question
     etQuestDelete.addEventListener('click', function(event){
         if(this.style.backgroundColor == 'gray'){
-            alert('Suppression disponible dans ' + remainingTime + ',\nou en cas de reponse de la part de votre enseignant');
+            alert('Suppression disponible dans ' + remainingTime + ',\nou en cas de réponse de la part de votre enseignant');
             event.preventDefault();
         }
         else{
@@ -141,7 +141,7 @@
     
     //Deconnexion
     logout.addEventListener('click', function(event){
-        if(confirm('Souhaitez-vous vraiment vous deconnecter?')) logoutConfirm.submit();
+        if(confirm('Souhaitez-vous vraiment vous déconnecter?')) logoutConfirm.submit();
         else event.preventDefault();
     });
 </script>

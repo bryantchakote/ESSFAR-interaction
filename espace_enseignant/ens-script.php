@@ -92,7 +92,7 @@
     sendAns.addEventListener('click', function(event){
         try{
             if(ansWording.value == '')
-                throw 'Veuillez saisir votre reponse';
+                throw 'Veuillez saisir votre réponse';
         }
         catch(e){
             alert(e);
@@ -103,7 +103,7 @@
     // Supprimer une question
     ensQuestDelete.addEventListener('click', function(event){
         if(this.style.backgroundColor == 'gray'){
-            alert('Suppression disponible trois jours apres une reponse reponse');
+            alert('Suppression disponible trois jours après une réponse');
             event.preventDefault();
         }
         else{
@@ -114,7 +114,7 @@
     
     // Deconnexion
     logout.addEventListener('click', function(event){
-        if(confirm('Souhaitez-vous vraiment vous deconnecter?')) logoutConfirm.submit();
+        if(confirm('Souhaitez-vous vraiment vous déconnecter?')) logoutConfirm.submit();
         else event.preventDefault();
     });
 </script>

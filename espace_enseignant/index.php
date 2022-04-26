@@ -38,7 +38,7 @@
             </div>
             
             <form method='post' id='logout-confirm' action='../logout.php'>
-                <button name='logout' id='logout' value='logout'>Deconnexion</button>
+                <button name='logout' id='logout' value='logout'>Déconnexion</button>
             </form>
         </div>
         
@@ -49,8 +49,8 @@
                     <nav class='ens-menu'>
                         <form method='post' action='ens-trait.php'>
                             <button id='ens-all-quest'>Toutes les questions</button>
-                            <button type='submit' name='untreated-quest' value='untreated-quest' id='ens-untreated-quest'>Non-traitees</button>
-                            <button type='submit' name='treated-quest' value='treated-quest' id='ens-treated-quest'>Traitees</button>
+                            <button type='submit' name='untreated-quest' value='untreated-quest' id='ens-untreated-quest'>Non-traitées</button>
+                            <button type='submit' name='treated-quest' value='treated-quest' id='ens-treated-quest'>Traitées</button>
                         </form>
                     </nav>
                 </div>
@@ -64,7 +64,7 @@
                     );
                     
                     unset($_SESSION['untreated-quest']);
-                ?>  <h1 id='ens-questions-heading'>Questions non traitees</h1> <?php
+                ?>  <h1 id='ens-questions-heading'>Questions non traitées</h1> <?php
                 }
                 
                 elseif(isset($_SESSION['treated-quest']) && !empty($_SESSION['treated-quest']) && $_SESSION['treated-quest'] == 1){
@@ -75,7 +75,7 @@
                     );
                     
                     unset($_SESSION['treated-quest']);
-                ?>  <h1 id='ens-questions-heading'>Questions traitees</h1> <?php
+                ?>  <h1 id='ens-questions-heading'>Questions traitées</h1> <?php
                 }
                 
                 else{
@@ -110,7 +110,7 @@
                         <p><?php echo $question['quest_heure'] ?></p>
                     </div>
                     <div class='ens-quest-infos' title='Cliquez pour afficher le contenu'>
-                        <p>Posee par :</p>
+                        <p>Posée par :</p>
                         <b><?php echo explode(' ', $questionEt['et_prenom'])[0]. ' ' .explode(' ', $questionEt['et_nom'])[0] ?></b>
                         <br>
                         <p>Etudiant en :</p>
@@ -121,13 +121,13 @@
                             <p>Question :</p>
                             <b><?php echo $question['quest_libelle'] ?></b>
                             <br><br>
-                            <p>Reponse :</p>
-                            <b><?php echo ($question['ans_libelle'] == '') ? 'Vous n\'avez pas encore repondu a cette question' : $question['ans_libelle'] ?></b>
+                            <p>Réponse :</p>
+                            <b><?php echo ($question['ans_libelle'] == '') ? 'Vous n\'avez pas encore répondu à cette question' : $question['ans_libelle'] ?></b>
                             <br><br>
                         </div>
                     </div>
                     <div class='ens-ans-send-date'>
-                        <b>Date reponse</b>
+                        <b>Date réponse</b>
                         <br>
                         <p><?php echo $question['ans_date'] == NULL ? '----------------' : $question['ans_date'] ?></p>
                         <br>
@@ -147,14 +147,14 @@
             
             <div id='actions'>
                 <div id='ens-ans-display'>
-                    <button id='answer'>Repondre</button>
+                    <button id='answer'>Répondre</button>
                     
                     <form method='post' action='ens-trait.php' id='answer-form'>
                     <!-- Bloc de formulation de la reponse -->
                         <input name='ens-question-id' id='ens-question-id'>
                         
                         <div id='ens-edit-ans'>
-                            <textarea name='ans-wording' id='ans-wording' rows='12' cols='18' maxlength= '500' placeholder='Tapez votre reponse'></textarea>
+                            <textarea name='ans-wording' id='ans-wording' rows='12' cols='18' maxlength= '500' placeholder='Tapez votre réponse'></textarea>
                             
                             <button type='submit' name='send-ans' id='send-ans' value='send-ans'>Envoyer</button>
                         </div>

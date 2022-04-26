@@ -16,7 +16,7 @@ CREATE TABLE UEs(
         UE_nom VARCHAR (50) NOT NULL
 	,CONSTRAINT UEs_AK UNIQUE (UE_nom)
     ,CONSTRAINT UEs_PK PRIMARY KEY (UE_id)
-)ENGINE = MyISAM;
+)ENGINE = InnoDB;
 
 
 #------------------------------------------------------------
@@ -30,7 +30,7 @@ CREATE TABLE niveaux(
 	,CONSTRAINT niveaux_AK_nom UNIQUE (niv_nom)
     ,CONSTRAINT niveaux_AK_alias UNIQUE (niv_alias)
     ,CONSTRAINT niveaux_PK PRIMARY KEY (niv_id)
-)ENGINE = MyISAM;
+)ENGINE = InnoDB;
 
 
 #------------------------------------------------------------
@@ -66,7 +66,7 @@ CREATE TABLE enseignants(
         ens_mdp    VARCHAR (16) NOT NULL
 	,CONSTRAINT enseignants_AK UNIQUE (ens_email)
 	,CONSTRAINT enseignants_PK PRIMARY KEY (ens_id)
-)ENGINE = MyISAM;
+)ENGINE = InnoDB;
 
 
 #------------------------------------------------------------
@@ -82,7 +82,7 @@ CREATE TABLE administrateurs(
         admin_mdp    VARCHAR (16) NOT NULL
 	,CONSTRAINT administrateurs_AK UNIQUE (admin_email)
 	,CONSTRAINT administrateurs_PK PRIMARY KEY (admin_id)
-)ENGINE = MyISAM;
+)ENGINE = InnoDB;
 
 
 #------------------------------------------------------------

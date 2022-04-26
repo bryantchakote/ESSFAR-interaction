@@ -3,9 +3,9 @@
     include '../db_config.php';
 
     if(isset($_POST['enreg-submit']) && !empty($_POST['enreg-submit'])){
-        $et_enreg = $ens_enreg = $et_infos_control = $ens_infos_control = $confirm_action = '';
+        $et_enreg = $ens_enreg = $et_infos_control = $ens_infos_control = $confirm_action = 0;
         
-        if($_POST['confirm-action'] == $_SESSION['mdp']){
+        if($_POST['confirm-action'] == $_SESSION['mdp'])
             $etInfosSelect = $connexion->prepare('SELECT * FROM etudiants');
             $etInfosSelect->execute();
 
@@ -59,7 +59,7 @@
                 while($adminInfos = $adminInfosSelect->fetch())
                     if(($adminInfos['admin_email'] == $_POST['enreg-email']) && ($adminInfos['admin_mdp'] == $_POST['enreg-pwd2']))
                         $ens_infos_control = 1;
-                        
+                
                 if($ens_infos_control == 0){
                     $ajouterEnseignant = $connexion->prepare('
                     INSERT INTO enseignants(ens_nom, ens_prenom, ens_sexe, ens_email, ens_mdp)
@@ -91,24 +91,25 @@
                     $ens_enreg = 1;
                 }
             }
-        }
+        
         else
             $confirm_action = 1;
         
-        
-    // Messages d'erreur
-    function reportMessage($var, $message){
-        if(isset($var) && !empty($var) && ($var == 1)){
-            echo $message;
-            echo "<script>location.replace('espace_admin-enregistrement.php')</script>";
+        // Messages d'erreur
+        function reportMessage($var, $message){
+            if(isset($var) && !empty($var) && ($var == 1)){
+                echo $message;
+                echo "<script>location.replace('espace_admin-enregistrement.php')</script>";
+            }
         }
-    }
-    reportMessage($et_enreg, "<script>alert('Le nouvel etudiant a bien ete enregistre!')</script>");
-    reportMessage($et_infos_control, "<script>alert('Adresse mail ou matricule invalide!')</script>");
+            
         
-    reportMessage($ens_enreg, "<script>alert('Le nouvel enseignat a bien ete enregistre!')</script>");
-    reportMessage($ens_infos_control, "<script>alert('Adresse mail ou mot de passe invalide!')</script>");
-        
-    reportMessage($confirm_action, "<script>alert('Mot de passe invalide!')</script>");
+        reportMessage($et_enreg, "<script>alert('Le nouvel étudiant a bien été enregistré!')</script>");
+        reportMessage($et_infos_control, "<script>alert('Adresse mail ou matricule invalide!')</script>");
+            
+        reportMessage($ens_enreg, "<script>alert('Le nouvel enseignant a bien été enregistré!')</script>");
+        reportMessage($ens_infos_control, "<script>alert('Adresse mail ou mot de passe invalide!')</script>");
+            
+        reportMessage($confirm_action, "<script>alert('Mot de passe invalide!')</script>");
     }
 ?>

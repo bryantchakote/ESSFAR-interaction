@@ -35,7 +35,7 @@ p#et-name, p#ens-name, p#admin-name{
 }
 #et-left button, #ens-left button, #admin-left button{
     margin: 30px auto;
-    width: 90%;
+    width: 91%;
 }
 button#logout{
     padding: 0px;
@@ -79,7 +79,7 @@ div.et-center-container, div.ens-center-container, div.admin-center-container{
 /* Central superieur */
 div.et-ask-question, div.ens-options, div.admin-options{
     margin-top: 10px;
-    padding: 25px;
+    padding: 22.9px;
     width: 100%;
     background-color: #68A;
     text-align: center;
@@ -104,7 +104,7 @@ button a:hover{color: #FFF;}
 /* Central inferieur */
 h1#et-questions-heading, h1#ens-questions-heading, h1#admin-heading{
     margin: 0px;
-    padding: 8.5px;
+    padding: 7.8px;
     background-color: #68A;
     color: #FFF;
     text-align: center;

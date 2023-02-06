@@ -1,5 +1,5 @@
 # Projet académique 2019-2020
-Une plateforme d'échange entre étudiant.e.s et enseignant.e.s de l'ESSFAR, application web réalisée en juillet-août 2020 avec des camarades de classe (Audrey Kamga, Donald Happi, Litisia Douanguim, et Patrick Fogaing).
+Une plateforme d'échange entre étudiant.e.s et enseignant.e.s de l'ESSFAR, application web réalisée en juin-juillet 2020 avec des camarades de classe (Audrey Kamga, Donald Happi, Litisia Douanguim, et Patrick Fogaing).
 
 ## Vue d'ensemble
 **ESSFAR interaction** est une plateforme via laquelle les étudiant.e.s de l'ESSFAR ont la possibilité de **poser des questions et attendre des réponses** de la part de leurs enseignant.e.s. Un ou plusieurs administrateur.trice.s gère.nt le système en y inscrivant les étudiant.e.s et les enseignant.e.s, et en modifiant leurs informations. Ils peuvent par ailleurs, pour une raison ou pour une autre, réassigner une question à un.e autre enseignant.e, supprimer des utilisateur.trice.s, etc.
